@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,10 +10,11 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:text="0"
         android:textAlignment="center"
+        android:textColor="#900837"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +25,20 @@
         android:id="@+id/button"
         android:layout_width="181dp"
         android:layout_height="76dp"
-        android:background="#C83232"
+        android:background="#CC5858"
         android:backgroundTint="#DB1212"
         android:text="Нажми меня"
-        android:textSize="20sp"
+        android:textColor="#E2AFAF"
+        android:textColorLink="#D13535"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:iconPadding="10dp"
+        app:iconTint="#210000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
         app:rippleColor="#280A0A"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="502dp" />
+        app:strokeColor="#A44B4B" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-            val knopka: Button = findViewById(R.id.button)
-            val tablo: TextView = findViewById(R.id.result)
+            val button: Button = findViewById(R.id.button)
+            val board: TextView = findViewById(R.id.result)
 
-            knopka.setOnClickListener {
-                val chislo = (0..6).random()
-                tablo.text = chislo.toString()
+            button.setOnClickListener {
+                val number = (0..6).random()
+                board.text = number.toString()
             }
         }
     }
